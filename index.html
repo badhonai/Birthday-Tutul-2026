@@ -13,6 +13,38 @@
             box-sizing: border-box;
         }
 
+
+html, body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100svh; /* better on mobile than 100vh */
+  padding:0;
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+
+
+body{
+  background: radial-gradient(ellipse at center, #2d1b4e 0%, #0d0d1a 100%);
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;   /* was center */
+  padding-top:0;            /* or set a value like 16px */
+  min-height:100svh;
+  font-family:'Quicksand', sans-serif;
+  overflow:hidden;
+}
+
+
+
+
+      
+/* 
         body {
             background: radial-gradient(ellipse at center, #2d1b4e 0%, #0d0d1a 100%);
             display: flex;
@@ -21,7 +53,7 @@
             min-height: 100vh;
             font-family: 'Quicksand', sans-serif;
             overflow: hidden;
-        }
+        } */
 
         /* ============ CARD CONTAINER ============ */
         .card-container {
